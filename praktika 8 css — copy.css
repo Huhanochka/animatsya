@@ -1,0 +1,142 @@
+* {
+
+  box-sizing: border-box;
+
+}
+body {
+
+  font-family: 'arial', sans-serif;
+
+}
+.scene {
+	width: 100%;
+	height: 100%;
+	min-height: 450px;
+	position: relative;
+	top: 0;
+    left: 0;
+	background-color: #002137;
+	transform: translate3d(0, 0, 0);
+}
+.layer-5 {
+	animation: animation_sky linear 10s infinite both;
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/sky.png') 0 100% repeat-x;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+}
+.layer-4 {
+	animation: animation_star linear 30s infinite both;
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/star.png') 0 100% repeat-x;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+}
+.layer-3 {
+	animation: animation_kometa linear 60s infinite both;
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/kometa.png') 0 100% repeat-x;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+}
+.layer-2 {
+	animation: animation_inop linear 90s infinite both;
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/inop.png') 0 100% repeat-x;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+}
+.layer-1 {
+	animation: animation_kosm linear 120s infinite both;
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/kosm.png') 0 100% repeat-x;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+}
+.obj-1 {
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/raketa.png') 0 100% no-repeat;
+	z-index: 1;
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+	animation: animation_raketa linear 10s infinite both;
+}
+.obj-2 {
+	background: url('https://github.com/Huhanochka/animatsya/blob/main/sputnik.png') 0 100% no-repeat;
+	z-index: 1;
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: auto 100%;
+	animation: animation_sputnik linear 15s infinite both;
+}
+@keyframes animation_fg {
+
+  0% {
+
+    background-position: 2765px 100%;
+
+  }
+
+  100% {
+
+    background-position: 550px 100%;
+
+  }
+
+}
+
+@keyframes animation_raketa {
+
+  0% {
+
+    background-position: -300px 100%;
+
+  }
+
+  100% {
+
+    background-position: 2000px 100%;
+
+  }
+}
+@keyframes animation_sputnik {
+
+  0% {
+
+    background-position: -300px 100%;
+
+  }
+
+  100% {
+
+    background-position: 2000px 100%;
+
+  }
+
+}
